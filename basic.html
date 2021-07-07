@@ -1,0 +1,197 @@
+<html lang="en-US">
+<head>
+<title>Information-andhow We Care</title>
+<link rel="shortcut icon" href="https://raw.githubusercontent.com/fahimsiddiqui7/info-andhow/main/info-andhow-logo16x16.ico" type="image/x-icon">
+<link rel="icon" href="https://raw.githubusercontent.com/fahimsiddiqui7/info-andhow/main/info-andhow-logo32x32.ico" sizes="32x32">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+ 
+}
+.header {
+  padding: 30px;
+  text-align: center;
+  font-family: Cambria Math;
+  font-size: 28px;
+}
+#navbar {
+  overflow: hidden;
+  background-color: #AAAAAA;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navbar a:hover {
+  background-color: #fffbfb;
+  color: black;
+}
+#navbar a.active {
+  background-color: #DDDDDD;
+  color: white;
+}
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #c7c7c7;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  color: #ffffff;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.openbtn {
+  font-size: 3px;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+.openbtn:hover {
+  background-color: #444;
+}
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.icon {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+</style>
+<div class="header">
+  <img class="icon" src="https://raw.githubusercontent.com/fahimsiddiqui7/info-andhow/main/info-andhow-logo.png" alt="Our Logo" width="7%"> 
+  <h1>Information- And How</h1>
+    <h3>We at Info-andhow will always try to find a way to help</h3>
+  </div>
+  <div id="navbar">
+      <a class="openbtn" onclick="openNav()">&#9776;</a>
+    <a class="active" href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="aboutus.html"><i class="fa fa-fw fa-building"></i>About Us</a>
+    <a href="http://myaccountinfo-andhow.herokuapp.com"><i class="fa fa-fw fa-user"></i>Login/Sign Up</a>
+  </div>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+    <a href="products.html"><i class="fa fa-fw fa-rocket"></i>Products</a>
+    <a href="faq.html"><i class="fa fa-fw fa-question"></i>FAQ</a>
+  </div>
+<script>
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+
+    function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</head>
+
+<style>
+.centerallc {
+  text-align:center;
+}
+.basicxstxt {
+  font-size: 20px;
+}
+</style>
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+  });
+  </script>
+<body><div class="content" ></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <br><br>
+    <hr style="height:2px;border-width:0;color:#000000;background-color:gray">
+  <footer>
+  <table class="table table-borderless">
+  <tr>
+  <th>Products</th>
+  <th>Info-andhow</th>
+  <th>Contacts</th>
+  <th>About Us</th>
+  </tr>
+  <tr>
+  <td><a href="developingpage.html">Developing</a></td>
+  <td><a href="http://myaccountinfo-andhow.herokuapp.com">Account Profile</a></td>
+  <td>fahimsiddiqui313@gmail.com</td>
+  <td><a href="aboutus.html">About us</a></td>
+  </tr>
+  </table>
+  </footer>
+  </div>
+  
+  </body></div>
+   </html>
